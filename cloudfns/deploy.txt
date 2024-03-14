@@ -1,0 +1,13 @@
+gcloud auth application-default login --impersonate-service-account = curlbrac-cloud-function-invoke@cosmic-rarity-416918.iam.gserviceaccount.com
+
+
+gcloud function deploy 
+upload_pdf
+--region us-east4
+--allow-unauthenticated
+--memory 256MB
+--runtime python312
+--timeout 90
+--min-instances 1
+--trigger-http
+--service-account curlbrac-cloud-function-invoke@cosmic-rarity-416918.iam.gserviceaccount.com

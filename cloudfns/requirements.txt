@@ -1,0 +1,9 @@
+functions_framework==3.*
+google-cloud-storage==2.15.*
+
+PyPDF2==3.*
+langchain==0.*
+langchain-core==0.*
+langchain-google-vertexai==0.*
+pgvector==0.*
+psycopg2-binary
